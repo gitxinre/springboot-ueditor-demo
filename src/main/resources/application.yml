@@ -1,0 +1,18 @@
+
+
+spring:
+  jpa:
+    #配置数据库类型
+    database: MYSQL
+    #配置是否打印sql
+    show-sql: true
+    #Hibernate相关配置
+    hibernate:
+      #配置级联等级
+      ddl-auto: update
+      naming:
+        #命名策略
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
